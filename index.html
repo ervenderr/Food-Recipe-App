@@ -19,22 +19,23 @@
                 <h1 class="text-center my-5">Meal Recipe Finder App</h1>
                 <div class="input-group">
                     <input type="search" class="form-control" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
+                        aria-describedby="search-addon" id="search-input"/>
                     <button type="button" class="btn btn-outline-primary " data-mdb-ripple-init><i
-                            class="fas fa-search py-1 px-2"></i></button>
+                            class="fas fa-search py-1 px-2" id="search"></i></button>
                 </div>
                 <h1 class="text-center my-5 ">Search results:</h1>
             </div>
             <div class="container">
-                <div class="row justify-content-md-center">
-                    <div class="col-sm mb-5">
+                <div class="row justify-content-md-center" id="meal">
+                    
+                    <!-- <div class="col-sm mb-5">
                         <div class="card-hover">
                             <div class="card-hover__content">
                                 <h3 class="card-hover__title">
-                                    Make your <span>choice</span> right now!
+                                    Chicken Adobo
                                 </h3>
                                 <button class="card-hover__link" data-bs-toggle="modal" data-bs-target="#myLargeModal">
-                                    <span>Learn How</span>
+                                    <span>Get recipe</span>
                                     <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -44,73 +45,11 @@
                             <div class="card-hover__extra">
                                 <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/1920px-Adobo_DSCF4391.jpg"
                                 alt="" />
                         </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-hover">
-                            <div class="card-hover__content">
-                                <h3 class="card-hover__title">
-                                    Make your <span>choice</span> right now!
-                                </h3>
-                                <a href="#" class="card-hover__link">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="card-hover__extra">
-                                <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-hover">
-                            <div class="card-hover__content">
-                                <h3 class="card-hover__title">
-                                    Make your <span>choice</span> right now!
-                                </h3>
-                                <a href="#" class="card-hover__link">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="card-hover__extra">
-                                <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                                alt="" />
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-hover">
-                            <div class="card-hover__content">
-                                <h3 class="card-hover__title">
-                                    Make your <span>choice</span> right now!
-                                </h3>
-                                <a href="#" class="card-hover__link">
-                                    <span>Learn How</span>
-                                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="card-hover__extra">
-                                <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=60"
-                                alt="" />
-                        </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
             </div>
         </div>
@@ -121,10 +60,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="meal-image-container">
+                    <!-- <div class="meal-image-container">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/1920px-Adobo_DSCF4391.jpg"
                             alt="" srcset="">
                         <h1 class="meal-title">Chicken Adobo</h1>
+                        <p class="meal-category">CHICKEN</p>
                         <h5 class="cook-time"><i
                             class="fas fa-clock py-1 px-2"></i> 45 minutes</h5>
                     </div>
@@ -146,7 +86,7 @@
                                 <li>One cup water</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
